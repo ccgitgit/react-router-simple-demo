@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
-
+import NavBar from './NavBar.jsx'
 export default class App extends Component {
   render(){
     return (
       <div>
-        <p>Hello!</p>
+        <NavBar />
+        {this.props.children}
+        <div>footer......</div>
       </div>
     )
   }
